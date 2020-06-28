@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:hack20app/Discover/discover_home.dart';
+import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
 import 'Empower/empowerPage.dart';
 
@@ -23,7 +25,7 @@ class _HomePageState extends State<HomePage> {
         children: [
           Placeholder(),
           Empower(),
-          Placeholder(),
+          DiscoverHome(),
         ],
       ),
       bottomNavigationBar: ClipRRect(
@@ -45,7 +47,7 @@ class _HomePageState extends State<HomePage> {
             },
             items: [
               BottomNavigationBarItem(
-                  title: Container(), icon: Icon(Icons.favorite)),
+                  title: Container(), icon: Icon(MdiIcons.meditation)),
               BottomNavigationBarItem(
                   title: Container(), icon: Icon(Icons.favorite)),
               BottomNavigationBarItem(
