@@ -25,6 +25,7 @@ class _JournalingPageState extends State<JournalingPage> {
     return Scaffold(
       backgroundColor: Color(0XffFDFDFD),
       body: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
           SizedBox(
             height: MediaQuery.of(context).padding.top,
@@ -35,7 +36,7 @@ class _JournalingPageState extends State<JournalingPage> {
               'Welcome Back',
               textAlign: TextAlign.left,
               style: GoogleFonts.poppins(
-                  fontSize: 42,
+                  fontSize: 36,
                   fontWeight: FontWeight.bold,
                   color: Color(0Xff1A1A1A)),
             ),
@@ -99,50 +100,7 @@ class _JournalingPageState extends State<JournalingPage> {
                           ),
                         )),
                   ),
-//                  Align(
-//                    alignment: Alignment.centerLeft,
-//                    child:  Padding(
-//                      padding: const EdgeInsets.only(bottom: 8),
-//                      child: Row(
-//                        mainAxisAlignment: MainAxisAlignment.center,
-//                        children: <Widget>[
-//                          RaisedButton(
-//                            shape: RoundedRectangleBorder(
-//                                borderRadius: BorderRadius.circular(16.0),
-//                                side: BorderSide(color: Color(0xFF53D496))),
-//                            onPressed: () {},
-//                            color:Color(0xFF53D496),
-//                            textColor: Colors.white,
-//                            child: Text(
-//                              'Select',
-//                              style: GoogleFonts.poppins(
-//                                  fontSize: 14,
-//                                  fontWeight: FontWeight.bold,
-//                                  color: Color(0Xffffffff)),
-//                              textAlign: TextAlign.left,
-//                            ),
-//                          ),
-//                          SizedBox(width: 24,),
-//                          RaisedButton(
-//                            shape: RoundedRectangleBorder(
-//                                borderRadius: BorderRadius.circular(16.0),
-//                                side: BorderSide(color: Color(0xFF53A6D4))),
-//                            onPressed: () {},
-//                            color:Color(0xFF53A6D4),
-//                            textColor: Colors.white,
-//                            child: Text(
-//                              'Change',
-//                              style: GoogleFonts.poppins(
-//                                  fontSize: 14,
-//                                  fontWeight: FontWeight.bold,
-//                                  color: Color(0Xffffffff)),
-//                              textAlign: TextAlign.left,
-//                            ),
-//                          ),
-//                        ],
-//                      ),
-//                    ),
-//                  )
+
                 ],
               ),
             ),
@@ -193,11 +151,28 @@ class JournalCard extends StatelessWidget {
             borderRadius: BorderRadiusDirectional.circular(16)),
         child: Padding(
           padding: const EdgeInsets.all(16.0),
-          child: Text("Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,",maxLines: 3,overflow: TextOverflow.fade,
-          style: GoogleFonts.poppins(
-              fontSize: 14,
-              fontWeight: FontWeight.normal,
-              color: Color(0Xff1A1A1A)),),
+          child: Column(
+            children: <Widget>[
+              Align(
+                child: Padding(
+                  padding: const EdgeInsets.only(bottom:8.0),
+                  child: Text("Created on June 28",
+                    style: GoogleFonts.poppins(
+                      fontSize: 14,
+                      fontWeight: FontWeight.bold,
+                      color: Color(0Xff1A1A1A),),
+                    textAlign: TextAlign.end,
+                  ),
+                ),
+              ),
+              Text("Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,",maxLines: 3,overflow: TextOverflow.fade,
+              style: GoogleFonts.poppins(
+                  fontSize: 14,
+                  fontWeight: FontWeight.normal,
+                  color: Color(0Xff1A1A1A)),),
+
+            ],
+          ),
         ),
 
       ),
