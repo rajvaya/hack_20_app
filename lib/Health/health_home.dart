@@ -5,7 +5,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:hack20app/Empower/journaling_page.dart';
 import 'package:hack20app/Empower/power_task.dart';
 import 'package:hack20app/Empower/support_system.dart';
-import 'package:hack20app/Health/meditation.dart';
+import 'package:hack20app/Health/dummy_page.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
 import '../DataFile.dart';
@@ -53,7 +53,7 @@ class _HealthHomeState extends State<HealthHome> {
                      Navigator.push(
                          context,
                          MaterialPageRoute(
-                             builder: (BuildContext context) => Meditation()));
+                             builder: (BuildContext context) => DummyHealthPage(title: "Meditation",url: "https://i.ibb.co/j6nS1bB/Meditation-bro.png",color: Data().yellow60,)));
                    },
                    borderRadius: BorderRadius.circular(16),
                    child: Container(
@@ -87,7 +87,7 @@ class _HealthHomeState extends State<HealthHome> {
                                padding: const EdgeInsets.only(
                                    left: 16, right: 120, bottom: 16),
                                child: Text(
-                                 'Take a break and do relaxing activities That helps to heal your Mind',
+                                 'Mindfulness can: help relieve stress, lower blood pressure, reduce chronic pain, and improve sleep.',
                                  style: GoogleFonts.poppins(
                                    fontSize: 16,
                                    fontWeight: FontWeight.w400,
@@ -112,7 +112,7 @@ class _HealthHomeState extends State<HealthHome> {
                      Navigator.push(
                          context,
                          MaterialPageRoute(
-                             builder: (BuildContext context) => SupportSystem()));
+                             builder: (BuildContext context) => DummyHealthPage(title: "Yoga",url: "https://i.ibb.co/pK7hsv0/Healthy-habit-pana.png",color: Data().blue60,)));
                    },
                    borderRadius: BorderRadius.circular(16),
                    child: Container(
@@ -136,7 +136,7 @@ class _HealthHomeState extends State<HealthHome> {
                              Padding(
                                padding: const EdgeInsets.only(top: 16.0, left: 16),
                                child: Text(
-                                 'Support System',
+                                 'Yoga',
                                  style: GoogleFonts.poppins(
                                      fontSize: 28,
                                      fontWeight: FontWeight.bold,
@@ -147,7 +147,7 @@ class _HealthHomeState extends State<HealthHome> {
                                padding: const EdgeInsets.only(
                                    left: 16, right: 120, bottom: 16),
                                child: Text(
-                                 'Get Support from community by sharing mental health struggles without revealing  your identity',
+"Practicing the postures, breathing exercises and meditation makes you healthier in body,",
                                  style: GoogleFonts.poppins(
                                    fontSize: 16,
                                    fontWeight: FontWeight.w400,
@@ -174,7 +174,7 @@ class _HealthHomeState extends State<HealthHome> {
                      Navigator.push(
                          context,
                          MaterialPageRoute(
-                             builder: (BuildContext context) =>JournalingPage()));
+                             builder: (BuildContext context) =>DummyHealthPage(title: "exercise",url: "https://i.ibb.co/y0xVz1G/Workout-rafiki.png",color: Data().pink60,)));
                    },
                    child: Container(
                      height: size.height * 0.25,
@@ -196,7 +196,7 @@ class _HealthHomeState extends State<HealthHome> {
                              Padding(
                                padding: const EdgeInsets.only(top: 16.0, left: 16),
                                child: Text(
-                                 'Journaling',
+                                 'Exercise',
                                  style: GoogleFonts.poppins(
                                      fontSize: 28,
                                      fontWeight: FontWeight.bold,
@@ -207,7 +207,7 @@ class _HealthHomeState extends State<HealthHome> {
                                padding: const EdgeInsets.only(
                                    left: 16, right: 120, bottom: 16),
                                child: Text(
-                                 'Journaling helps control your symptoms and improve your mood by: Helping you prioritize problems, fears, and concerns.',
+                                 'Regular exercise can have a profoundly positive impact on depression, anxiety, ADHD, and more',
                                  style: GoogleFonts.poppins(
                                    fontSize: 16,
                                    fontWeight: FontWeight.w400,
