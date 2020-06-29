@@ -5,6 +5,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:hack20app/Empower/journaling_page.dart';
 import 'package:hack20app/Empower/power_task.dart';
 import 'package:hack20app/Empower/support_system.dart';
+import 'package:hack20app/Health/meditation.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
 import '../DataFile.dart';
@@ -52,7 +53,7 @@ class _HealthHomeState extends State<HealthHome> {
                      Navigator.push(
                          context,
                          MaterialPageRoute(
-                             builder: (BuildContext context) => PowerTask()));
+                             builder: (BuildContext context) => Meditation()));
                    },
                    borderRadius: BorderRadius.circular(16),
                    child: Container(
