@@ -29,7 +29,7 @@ class _EmpowerState extends State<Empower> {
                   Text(
                     'Hi, Raj',
                     style: GoogleFonts.poppins(
-                        fontSize: 30,
+                        fontSize: 42,
                         fontWeight: FontWeight.bold,
                         color: Color(0Xff1A1A1A)),
                   ),

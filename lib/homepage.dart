@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:hack20app/Discover/discover_home.dart';
+import 'package:hack20app/Health/health_home.dart';
 import 'package:hack20app/my_flutter_app_icons.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
@@ -25,7 +26,7 @@ class _HomePageState extends State<HomePage> {
         physics: ClampingScrollPhysics(),
         controller: controller,
         children: [
-          Placeholder(),
+          HealthHome(),
           Empower(),
           DiscoverHome(),
         ],
