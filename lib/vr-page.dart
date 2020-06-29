@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_custom_tabs/flutter_custom_tabs.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:hack20app/DataFile.dart';
 
 class VrDemo extends StatelessWidget {
@@ -13,29 +14,40 @@ class VrDemo extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         body: Container(
-          color: Data().pink60,
+          color: Data().vr60,
           child: Column(
-            mainAxisSize: MainAxisSize.max,
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               Row(),
               Text(
                 'Flutter WebVR',
-                style: TextStyle(
-                    fontSize: 44,
-                    color: Colors.white,
-                    fontWeight: FontWeight.bold
+                style: GoogleFonts.poppins(
+                    fontSize: 42,
+                    fontWeight: FontWeight.bold,
+                    color: Data().black100),
+              ),
+              SizedBox(height: 20),
+              Center(
+                child: Text(
+                  "Note : This is Experimental Feature Flutter Don't Support Virtual Reality This Feature is Done Using Chrome and WebVr. Here i am using \nhttps://nigereepps.github.io/webvr \n for Demo",
+                  style: GoogleFonts.poppins(
+                      fontSize: 18,
+                      fontWeight: FontWeight.w500,
+                      color: Color(0Xff1A1A1A),
+                    backgroundColor: Colors.red
+                  ),
+                  textAlign: TextAlign.center,
                 ),
               ),
               SizedBox(height: 20),
               RaisedButton(
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(30)),
-                color: Data().blue100,
+                color: Color(0xFF53D496).withOpacity(1),
                 child: Padding(
                   padding: const EdgeInsets.all(10),
                   child: Text(
-                    'ENTER',
+                    'Start',
                     style: TextStyle(
                       fontSize: 25,
                       color: Colors.white,
@@ -54,9 +66,7 @@ class VrDemo extends StatelessWidget {
   Future<void> _launchURL(BuildContext context) async {
     try {
       await launch(
-        // NOTE: Replace this URL with your GitHub Pages URL.
-//        'https://aframe.io/examples/showcase/helloworld/',
-      "https://nigereepps.github.io/webvr/",
+      "https://3dyt.hcilab.ml/#e9Nv04lGYE4,229",
         option: CustomTabsOption(
           toolbarColor: Theme.of(context).primaryColor,
           enableDefaultShare: true,
@@ -64,9 +74,7 @@ class VrDemo extends StatelessWidget {
           showPageTitle: false,
           animation: CustomTabsAnimation.slideIn(),
           extraCustomTabs: const <String>[
-            // ref. https://play.google.com/store/apps/details?id=org.mozilla.firefox
             'org.mozilla.firefox',
-            // ref. https://play.google.com/store/apps/details?id=com.microsoft.emmx
             'com.microsoft.emmx',
           ],
         ),

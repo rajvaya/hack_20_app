@@ -3,8 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:hack20app/Discover/discover_home.dart';
 import 'package:hack20app/Health/health_home.dart';
 import 'package:hack20app/my_flutter_app_icons.dart';
-import 'package:hack20app/vrtest.dart';
-
 import 'DataFile.dart';
 import 'Empower/empowerPage.dart';
 
