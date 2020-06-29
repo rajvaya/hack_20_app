@@ -66,7 +66,7 @@ class VrDemo extends StatelessWidget {
   Future<void> _launchURL(BuildContext context) async {
     try {
       await launch(
-      "https://3dyt.hcilab.ml/#e9Nv04lGYE4,229",
+      "https://nigereepps.github.io/webvr/",
         option: CustomTabsOption(
           toolbarColor: Theme.of(context).primaryColor,
           enableDefaultShare: true,
