@@ -4,6 +4,7 @@ class Data{
  Color blue60 = Color(0Xff73D0E6).withOpacity(0.6);
  Color yellow60 =  Color(0XffFEDE77).withOpacity(0.6);
  Color pink60 = Color(0XffFBA5B1).withOpacity(0.6);
+ Color vr60 = Color(0XffBD25E5).withOpacity(0.4);
 Color blue100 = Color(0Xff73D0E6).withOpacity(1);
  Color yellow100 =  Color(0XffFEDE77).withOpacity(1);
  Color pink100 = Color(0XffFBA5B1).withOpacity(1);

@@ -1,10 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:hack20app/Discover/discover_home.dart';
 import 'package:hack20app/Health/health_home.dart';
 import 'package:hack20app/my_flutter_app_icons.dart';
-import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
+import 'package:hack20app/vrtest.dart';
 
 import 'DataFile.dart';
 import 'Empower/empowerPage.dart';
@@ -19,11 +18,11 @@ class _HomePageState extends State<HomePage> {
   var controller = PageController(initialPage: 1);
   @override
   Widget build(BuildContext context) {
-    var size = MediaQuery.of(context).size;
     return Scaffold(
       backgroundColor: Color(0XffFDFDFD),
+
       body: PageView(
-        physics: ClampingScrollPhysics(),
+        physics: new NeverScrollableScrollPhysics(),
         controller: controller,
         children: [
           HealthHome(),

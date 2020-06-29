@@ -55,7 +55,8 @@ class VrDemo extends StatelessWidget {
     try {
       await launch(
         // NOTE: Replace this URL with your GitHub Pages URL.
-        'https://aframe.io/examples/showcase/helloworld/',
+//        'https://aframe.io/examples/showcase/helloworld/',
+      "https://nigereepps.github.io/webvr/",
         option: CustomTabsOption(
           toolbarColor: Theme.of(context).primaryColor,
           enableDefaultShare: true,

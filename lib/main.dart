@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:hack20app/homepage.dart';
-import 'package:hack20app/vrtest.dart';
 
 void main() {
   runApp(MyApp());
@@ -29,7 +28,7 @@ class MyApp extends StatelessWidget {
         // closer together (more dense) than on mobile platforms.
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home:HomePage(),
+      home: HomePage(),
     );
   }
 }
