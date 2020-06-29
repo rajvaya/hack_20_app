@@ -16,6 +16,7 @@ class _DiscoverHomeState extends State<DiscoverHome> {
 
   var feed= [
     PoadcastData("https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/99pi.svg/1200px-99pi.svg.png", "99% Invisible", "Roman Mars  • June 28","16.33"),
+    PoadcastData("https://rachelcorbett.com.au/wp-content/uploads/2018/07/Neon-podcast-logo.jpg", "WTF podcast", "Bard Trump  • June 25","11.33"), PoadcastData("https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/99pi.svg/1200px-99pi.svg.png", "99% Invisible", "Roman Mars  • June 28","16.33"),
     PoadcastData("https://rachelcorbett.com.au/wp-content/uploads/2018/07/Neon-podcast-logo.jpg", "WTF podcast", "Bard Trump  • June 25","11.33"),
     MemeData("https://i.pinimg.com/736x/43/c7/38/43c738b17972e3adec62a943bb7b9043.jpg"),
     MemeData("https://i.pinimg.com/736x/43/c7/38/43c738b17972e3adec62a943bb7b9043.jpg"),
