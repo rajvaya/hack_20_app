@@ -34,51 +34,133 @@ class _SupportSystemState extends State<SupportSystem> {
     return Scaffold(
       backgroundColor: Color(0XffFDFDFD),
       body: Column(
+        mainAxisAlignment: MainAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
           SizedBox(
             height: MediaQuery.of(context).padding.top,
           ),
-          Center(
-            child: Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Text(
-                'Feed',
-                style: GoogleFonts.poppins(
-                    fontSize: 30,
-                    fontWeight: FontWeight.bold,
-                    color: Color(0Xff1A1A1A)),
+          Padding(
+            padding: const EdgeInsets.only(left: 16,right: 16,top: 16,bottom: 0),
+            child: Text(
+              'Feed',
+              textAlign: TextAlign.left,
+              style: GoogleFonts.poppins(
+                  fontSize: 42,
+                  fontWeight: FontWeight.bold,
+                  color: Color(0Xff1A1A1A)),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(16.0),
+            child: Container(
+              height: size.height * 0.25,
+              decoration: BoxDecoration(
+                  color: Data().pink60,
+                  borderRadius: BorderRadiusDirectional.circular(16)),
+              child: Row(
+                children: <Widget>[
+                  Expanded(
+                    flex: 1,
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: <Widget>[
+                        Padding(
+                          padding: const EdgeInsets.only(top:16.0,left:16),
+                          child: Text(
+                            'Share Your Struggles With Community',
+                            style: GoogleFonts.poppins(
+                                fontSize: 18,
+                                fontWeight: FontWeight.bold,
+                                color: Color(0Xff1A1A1A)),
+                            textAlign: TextAlign.left,
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.all(16.0),
+                          child: RaisedButton(
+                            shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(16.0),
+                                side: BorderSide(color: Color(0xFF53A6D4))),
+                            onPressed: () {},
+                            color:Color(0xFF53A6D4),
+                            textColor: Colors.white,
+                            child: Text(
+                              'Post Now',
+                              style: GoogleFonts.poppins(
+                                  fontSize: 14,
+                                  fontWeight: FontWeight.bold,
+                                  color: Color(0Xffffffff)),
+                              textAlign: TextAlign.left,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Expanded(
+                    flex: 1,
+                    child: Align(
+                        alignment: Alignment.centerRight,
+                        child: Padding(
+                          padding: const EdgeInsets.all(16.0),
+                          child: Image.network(
+                            "https://i.ibb.co/zhdCZrK/Mental-health-bro.pngx",
+                          ),
+                        )),
+                  ),
+
+                ],
               ),
             ),
+
           ),
-          Center(
-            child: Padding(
-              padding: const EdgeInsets.fromLTRB(16.0,8.0,16.0,8.0),
-              child: SizedBox(
-                height: size .height* 0.15,
-                child:  TextField(
-                  expands: true,
-                  decoration: InputDecoration(
-                    hintText: "Share Your Mental Struggles",
-                    focusedBorder: OutlineInputBorder(
-                      borderRadius: BorderRadius.all(Radius.circular(16)),
-                      borderSide: BorderSide(width: 1,color: Data().pink60),
-                    ),
-                    enabledBorder: OutlineInputBorder(
-                      borderRadius: BorderRadius.all(Radius.circular(16)),
-                      borderSide: BorderSide(width: 1,color:Data().blue60),
-                    ),
-                    border: OutlineInputBorder(
-                        borderRadius: BorderRadius.all(Radius.circular(4)),
-                        borderSide: BorderSide(width: 1,)
-                    ),
-                  ) ,
-                  keyboardType: TextInputType.multiline,
-                  minLines: null,//Normal textInputField will be displayed
-                  maxLines: null,// when user presses enter it will adapt to it
+          Padding(
+            padding: const EdgeInsets.all(16.0),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: <Widget>[
+                Text(
+                  'Recent Feed:',
+                  style: GoogleFonts.poppins(
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                      color: Color(0Xff1A1A1A)),
                 ),
-              )
+                Icon(MdiIcons.filterVariant,color: Data().black100,),
+              ],
             ),
           ),
+//          Center(
+//            child: Padding(
+//              padding: const EdgeInsets.fromLTRB(16.0,8.0,16.0,8.0),
+//              child: SizedBox(
+//                height: size .height* 0.15,
+//                child:  TextField(
+//                  expands: true,
+//                  decoration: InputDecoration(
+//                    hintText: "Share Your Mental Struggles",
+//                    focusedBorder: OutlineInputBorder(
+//                      borderRadius: BorderRadius.all(Radius.circular(16)),
+//                      borderSide: BorderSide(width: 1,color: Data().pink60),
+//                    ),
+//                    enabledBorder: OutlineInputBorder(
+//                      borderRadius: BorderRadius.all(Radius.circular(16)),
+//                      borderSide: BorderSide(width: 1,color:Data().blue60),
+//                    ),
+//                    border: OutlineInputBorder(
+//                        borderRadius: BorderRadius.all(Radius.circular(4)),
+//                        borderSide: BorderSide(width: 1,)
+//                    ),
+//                  ) ,
+//                  keyboardType: TextInputType.multiline,
+//                  minLines: null,//Normal textInputField will be displayed
+//                  maxLines: null,// when user presses enter it will adapt to it
+//                ),
+//              )
+//            ),
+//          ),
           Flexible(
             child: ListView.builder(
               padding: const EdgeInsets.fromLTRB(0,8.0,0,8.0),

@@ -54,7 +54,7 @@ class _HomePageState extends State<HomePage> {
                   icon: (index == 0)
                       ? Icon(
                           MyFlutterApp.med_fill,
-                          color: Data().blue100,
+                          color: Data().yellow100,
                         )
                       : Icon(
                           MyFlutterApp.med,
@@ -76,7 +76,7 @@ class _HomePageState extends State<HomePage> {
                   icon: (index == 2)
                       ? Icon(
                           MyFlutterApp.feed_fill,
-                          color: Data().yellow100,
+                          color: Data().blue100,
                         )
                       : Icon(
                           MyFlutterApp.feed,

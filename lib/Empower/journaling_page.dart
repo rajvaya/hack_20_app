@@ -67,8 +67,9 @@ class _JournalingPageState extends State<JournalingPage> {
                             textAlign: TextAlign.left,
                           ),
                         ),
-     Center(
-       child: RaisedButton(
+                        Padding(
+                          padding: const EdgeInsets.all(16.0),
+                          child: RaisedButton(
                               shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(16.0),
                                   side: BorderSide(color: Color(0xFF53A6D4))),
@@ -84,7 +85,7 @@ class _JournalingPageState extends State<JournalingPage> {
                                 textAlign: TextAlign.left,
                               ),
                             ),
-     ),
+                        ),
                       ],
                     ),
                   ),
@@ -96,7 +97,7 @@ class _JournalingPageState extends State<JournalingPage> {
                           padding: const EdgeInsets.all(16.0),
                           child: Image.network(
                             "https://i.ibb.co/0XdTYD6/Notes-bro.png",
-                            height: 130,
+
                           ),
                         )),
                   ),

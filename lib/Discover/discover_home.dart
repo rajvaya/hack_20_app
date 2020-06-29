@@ -289,9 +289,9 @@ class PodCastCard extends StatelessWidget {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: <Widget>[
-                      IconButton(icon: Icon(MdiIcons.rewind),onPressed: (){},),
-                      IconButton(icon: Icon(MdiIcons.playCircle),onPressed: (){},),
-                      IconButton(icon: Icon(MdiIcons.fastForward),onPressed: (){},),
+                      IconButton(icon: Icon(MdiIcons.rewind),onPressed: (){},color: Data().black100,),
+                      IconButton(icon: Icon(MdiIcons.playCircle),onPressed: (){},color: Data().black100,iconSize: 50,),
+                      IconButton(icon: Icon(MdiIcons.fastForward),onPressed: (){}, color:Data().black100,),
                     ],
                   ),
                 ),
